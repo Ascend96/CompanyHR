@@ -15,7 +15,7 @@ namespace CompanyHR
             Company company = new Company();
 
               // validation test  
-           // company.hireEmployee("Jane", null, "333-33-3333");
+          //  company.hireEmployee("Jane", "", "333-33-3333");
 
             // hires employee 
             company.hireEmployee("John", "Doe", "444-44-4444");

@@ -13,7 +13,7 @@ namespace CompanyHR
                     return _lastName;
                 }
                 set{
-                    if(value == null){
+                    if(value == null || value.Length <= 1){
                     throw new System.ArgumentException("last name" + REQUIRED_MSG);
                 }
                 _firstName = value;
@@ -26,7 +26,7 @@ namespace CompanyHR
                 return _lastName;
             }
             set{
-                if(value == null){
+                if(value == null || value.Length <= 1){
                     throw new System.ArgumentException("last name" + REQUIRED_MSG);
                 }
                 _lastName = value;
@@ -54,7 +54,7 @@ namespace CompanyHR
                 return _cubeID;
             }
             set{
-                if(value == null){
+                if(value == null || value.Length == 0){
                     throw new System.ArgumentException("cube id" + REQUIRED_MSG);
                 }
                 _cubeID = value;
