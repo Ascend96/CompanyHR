@@ -10,7 +10,15 @@ namespace CompanyHR
         {
             logger.Info("Program has Started");
 
-            Console.WriteLine("Hello World!");
+            
+            // creates instance of company
+            Company company = new Company();
+
+              // validation test  
+           // company.hireEmployee("Jane", null, "333-33-3333");
+
+            // hires employee 
+            company.hireEmployee("John", "Doe", "444-44-4444");
 
             logger.Info("Program has ended");
         }
